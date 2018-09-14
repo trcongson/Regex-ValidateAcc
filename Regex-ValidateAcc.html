@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acc</title>
+</head>
+<body>
+<script>
+    function isAccount(str) {
+        let regexp = /^[_a-z0-9]{6,}$/;
+        let res = regexp.test(str);
+        if(res){
+            console.log('is account');
+        }else{
+            console.log('is not account');
+        }
+    }
+    isAccount('_messi123');
+    isAccount('_456');
+</script>
+</body>
+</html>
